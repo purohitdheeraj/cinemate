@@ -1,7 +1,12 @@
+import { AllRoutes } from "./routes/AllRoutes";
 import "./App.css";
 
 function App() {
-	return <>Hare Krishna</>;
+	return (
+		<>
+			<AllRoutes />
+		</>
+	);
 }
 
 export default App;
