@@ -1,0 +1,14 @@
+API KEY : 9f3acf6fe1671ca7ec1c748af26ec36c
+Base URL : https://api.themoviedb.org/3/
+
+individual = https://api.themoviedb.org/3/movie/{movie_id}?api_key=9f3acf6fe1671ca7ec1c748af26ec36c
+
+now_playing = https://api.themoviedb.org/3/movie/now_playing?api_key=9f3acf6fe1671ca7ec1c748af26ec36c&language=en-US&page=1
+
+top_rated = https://api.themoviedb.org/3/movie/top_rated?api_key=9f3acf6fe1671ca7ec1c748af26ec36c
+
+popular = https://api.themoviedb.org/3/movie/popular?api_key=9f3acf6fe1671ca7ec1c748af26ec36c
+
+upcoming = https://api.themoviedb.org/3/movie/upcoming?api_key=9f3acf6fe1671ca7ec1c748af26ec36c
+
+search = https://api.themoviedb.org/3/search/movie?query=Jack+Reacher&api_key=9f3acf6fe1671ca7ec1c748af26ec36c
