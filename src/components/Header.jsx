@@ -49,7 +49,7 @@ export const Header = () => {
 	return (
 		<header>
 			<nav className="bg-white border-b-2 border-gray-200 dark:bg-gray-900 dark:border-slate-800">
-				<div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
+				<div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
 					<NavLink to="/" className="flex items-center">
 						<img
 							className="h-8 mr-2"

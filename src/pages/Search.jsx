@@ -21,7 +21,7 @@ export const Search = ({ apiPath }) => {
 				</p>
 			</section>
 			<section className="py-7">
-				<div className="flex justify-start flex-wrap max-lg:justify-center">
+				<div className="flex justify-start flex-wrap max-lg:justify-center other:justify-evenly">
 					{movies.map((movie) => {
 						return <Card key={movie.id} movieObj={movie} />;
 					})}
