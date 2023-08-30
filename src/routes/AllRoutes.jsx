@@ -11,22 +11,45 @@ export const AllRoutes = () => {
 		<div className="dark:bg-slate-800">
 			<main>
 				<Routes>
-					<Route path="" element={<MovieList />} />
+					<Route
+						path=""
+						element={
+							<MovieList
+								apiPath="movie/now_playing"
+								title="now playing"
+							/>
+						}
+					/>
 					<Route
 						path="movie/:id"
 						element={<MovieDetail />}
 					/>
 					<Route
 						path="movies/popular"
-						element={<MovieList />}
+						element={
+							<MovieList
+								apiPath="movie/popular"
+								title="popular"
+							/>
+						}
 					/>
 					<Route
 						path="movies/top"
-						element={<MovieList />}
+						element={
+							<MovieList
+								apiPath="movie/top_rated"
+								title="top rated"
+							/>
+						}
 					/>
 					<Route
 						path="movies/upcoming"
-						element={<MovieList />}
+						element={
+							<MovieList
+								apiPath="movie/upcoming"
+								title="upcoming"
+							/>
+						}
 					/>
 					<Route path="search" element={<Search />} />
 					<Route path="*" element={<PageNotFound />} />

@@ -1,22 +1,11 @@
-import { useEffect, useState } from "react";
 import { Card } from "../components";
+import { useFetch } from "../hooks/useFetch";
+import PropTypes from "prop-types";
+import { useTitle } from "../hooks/useTitle";
 
-export const MovieList = () => {
-	const [movies, setMovies] = useState([]);
-
-	useEffect(() => {
-		async function fetchMovies() {
-			const response = await fetch(
-				"https://api.themoviedb.org/3/movie/now_playing?api_key=9f3acf6fe1671ca7ec1c748af26ec36c"
-			);
-			const data = await response.json();
-			setMovies(data.results);
-		}
-
-		fetchMovies();
-	}, []);
-
-	console.log(movies);
+export const MovieList = ({ apiPath, title }) => {
+	const { data: movies } = useFetch(apiPath);
+	useTitle(title);
 
 	return (
 		<main>
@@ -29,4 +18,9 @@ export const MovieList = () => {
 			</section>
 		</main>
 	);
+};
+
+MovieList.propTypes = {
+	apiPath: PropTypes.string,
+	title: PropTypes.string,
 };
